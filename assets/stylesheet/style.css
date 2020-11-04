@@ -73,7 +73,30 @@ header h1 {
   background: rgb(250, 75, 75);
 }
 
-.active-col-2 input {
+.inputTask input {
   padding: 10px;
+  width: 70%;
   color: rgb(58, 58, 59);
+  border: none;
+  border-bottom: 2px solid rgb(250, 75, 75);
+  border-left: 2px solid rgb(250, 75, 75);
+  border-bottom-left-radius: 4px;
+  font-size: 1rem;
+  transition: border ease-in-out 0.7s;
+}
+.inputTask input:focus {
+  outline: none !important;
+  border-bottom-color: rgb(58, 58, 59);
+  border-left-color: rgb(58, 58, 59);
+}
+.inputTask button {
+  background: transparent;
+  font-size: 1.8rem;
+  margin: 0;
+  border: none;
+  position: relative;
+  top: 7px;
+}
+.inputTask button:focus {
+  outline: none;
 }

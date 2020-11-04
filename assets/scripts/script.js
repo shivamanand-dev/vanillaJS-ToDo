@@ -27,3 +27,14 @@ const sideChangeLeft = () => {
 
 arrowContainer.addEventListener("click", sideChangeRight, true);
 arrowContainer2.addEventListener("click", sideChangeLeft, true);
+
+// App
+
+const createTask = () => {
+  var taskInput = document.getElementById("taskInput").value;
+  var li = document.createElement("li");
+  var text = document.createTextNode(taskInput);
+  li.appendChild(text);
+
+  document.getElementById("tasks").appendChild(li);
+};
